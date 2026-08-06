@@ -22,13 +22,13 @@
     <h2>Produtos</h2>
         <article>
             <h3>Iphone 17 Pro Max </h3>
-
+<a href="img/iphone.jpg" target="_blank">
             <img src="img/iphone.jpg" alt="Iphone laranja com três câmeras traseiras, ao lado da tela preta com linhas abstratas em tons de laranja."
             width="250"
             height="250"
             loading="lazy">
-            <p>R$9.999,00</p>
-
+</a>
+<p>R$9.999,00</p>
         </article>
 
         <article>
@@ -53,37 +53,100 @@
         </figure>
         </article>
 
+        <h3>Comparativo de Produtos</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Categoria</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Iphone 17 Pro Max</td>
+                <td>R$ 9.999,00</td>
+                <td>Eletrônicos</td>
+            </tr>
+
+            <tr>
+                <td>Camisa</td>
+                <td>R$ 59,90</td>
+                <td>Vestuário</td>
+            </tr>
+
+            <tr>
+                <td>AirPods Max</td>
+                <td>R$ 4.998,90</td>
+                <td>Acessórios</td>
+            </tr>
+        </tbody>
+        </table>
+
     </section>
 
-    <section>
-        <h2>Vídeo do produto</h2>
+    <section id="video">
+        <h2>Vídeo do produto AirPods Max</h2>
 
         <video controls width="400" preload="metadata">
-            <source src="video/video.mp4" type="video/mp4">
+            <source src="midia/video1.mp4" type="video/mp4">
             Seu navegador não suporta vídeo.
         </video>
     </section>
 
-    <section>
+    <section id="audio">
         <h2>Descripção em áudio</h2>
 
         <audio controls preload="metadata">
-            <source src="img/descricao-produto.mp3" type="audio/mpeg">
+            <source src="midia/audio1.m4a" type="audio/mpeg">
             Seu navegador não suporta áudio.
         </audio>
     </section>
 
-    <section>
-        <h2>Conteúdo externo</h2>
+    <section id="local">
+        <h2>Conteúdo externo e Localização</h2>
 
         <iframe
-        src="https://www.youtube.com/embed/a4cA0ET9DRY"
+        src="https://www.youtube.com/embed/vcq5nMeg2SA?si=DH302iyjNNWqkPD7"
         width="400"
         height="225"
-        title="Vídeo externo sobre tecnologia"
+        title="Vídeo externo sobre O Iphone 17 Pro Max"
         loading="lazy"
         allowfullscreen> 
     </iframe>
+
+    <h3>Onde estamos (SENAI Canoas)</h3>
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d305.6639896820105!2d-51.17950209978667!3d-29.91633744198576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519700872ad10e9%3A0x6f0792ac1d871519!2sConjunto%20Comercial%20Canoas!5e0!3m2!1ses-419!2sbr!4v1786052636494!5m2!1ses-419!2sbr"
+        width="400"
+        height="300"
+        title="Mapa de localização do SENAI Canoas"
+        loading="lazy"
+        style="border:0;"
+        allowfullscreen>
+    </iframe>
+    </section>
+
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+        <form action="#" method="POST">
+            <div>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            </div>
+            <br>
+            <div>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
     
