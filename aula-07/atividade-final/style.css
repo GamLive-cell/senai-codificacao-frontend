@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    background-color: #edeff1;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #030303;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4b92cc;
+    color: rgb(248, 247, 247);
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+    background-color: white;
+    border: 4px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+}
+
+
+.preco {
+color: #00B4D8;
+font-weight: bold;
+font-size: 20px;
+}
+
+.botao {
+    background-color: #00B4D8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+}
+
+#destaque {
+    background-color: #00B4D8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+article img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #00B4D8;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #0D1B2A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.botao:hover {
+    background-color: #0077B6;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    border-color: #00B4D8;
+}
+
+.container {
+    padding: 20px;
+}
