@@ -1,4 +1,4 @@
-body {
+    body {
     font-family: 'Poppins', sans-serif;
     color: #000000;
     background-color: #edeff1;
@@ -97,7 +97,5 @@ footer {
 .container {
     padding: 20px;
     margin-left: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
