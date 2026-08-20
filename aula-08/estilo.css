@@ -1,0 +1,197 @@
+body {
+    background-color: #0B1020;
+    color: #f5f7ff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #161d33;
+   
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.navbar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #161d33;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 420px;
+    background-color: #071644;
+
+}
+
+.hero-conteudo {
+    text-align: center;
+    max-width: 700px;
+}
+
+.hero-acoes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6C63FF;
+    color: #0B1020;
+    border-radius: 5px;
+    border: 2px solid #21D4FD;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao:hover {
+background-color: #21D4FD;
+}
+
+.botao-secundario {
+    padding: 12px 24px;
+    background-color: #6C63FF;
+    color: #0B1020;
+    border-radius: 5px;
+    border: 2px solid #21D4FD;
+    text-decoration: none;
+}
+
+
+.grade-jogos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-jogo {
+    flex: 1;
+    min-width: 220px;
+    border-radius: 10px;
+    border: 2px solid #6c63ff;
+    background-color: #161d33;
+    padding: 12px 24px;
+
+}
+
+.card-jogo a {
+    color: #6C63FF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.card-jogo a:hover {
+    color: #21D4FD;
+}
+
+.icone-jogo {
+    font-size: 35px;
+}
+
+.categoria {
+    color: #21D4FD;
+    font-size: 14px;
+}
+
+.card-jogo h3 {
+    color: #F5F7FF;
+}
+
+.card-jogo a {
+    color: #6C63FF;
+    text-decoration: none;
+}
+
+
+.passos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.passo {
+    flex: 1;
+    min-width: 220px;
+    background-color: #161d33;
+    border-radius: 10px;
+    border: 5px solid #6C63FF;
+}
+
+.passo .numero {
+    font-size: 28px;
+    color: #21D4FD;
+    background-color: #6C63FF;
+}
+
+.comunidade {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.comunidade-texto {
+    flex: 1;
+
+}
+
+.comunidade-info {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    flex: 1;
+
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.links-rodape {
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    color: white;
+}
+
+.links-rodape a {
+    color: white;
+}
