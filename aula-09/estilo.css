@@ -1,0 +1,139 @@
+body {
+        margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0B1020;
+    color: #F5F7FF;
+}
+
+.layout {
+    display: grid;
+
+    grid-template-areas:
+    "cabecalho"
+    "principal"
+    "rodape";
+
+    gap: 20px;
+    min-height: 100vh;
+}
+
+.area-header {
+    grid-area: cabecalho;
+    background-color: #161d33;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.area-principal {
+    grid-area: principal;
+}
+.area-rodape {
+    grid-area: rodape;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 30px;
+    background-color: #161d33;
+    padding: 20px;
+}
+
+.rodape-links {
+  display: flex;
+
+  gap: 20px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a {
+    color: #F5F7FF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #21D4FD;
+}
+
+.logo {
+    color: #6C63FF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.grade-servicos {
+  display: grid;
+  background-color: #161d33;
+  padding: 25px;
+  border-radius: 12px;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+}
+
+.icone {
+    width: 50px;
+    height: 50px;
+
+    fill: #f5f7ff;
+
+    transition: 0.3s;
+}
+
+.card-servico:hover .icone {
+    fill: #21d4fd;
+    transform: scale(1.15);
+}   
+
+.grade-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.item-portfolio {
+    aspect-ratio: 1 / 1;
+    background-color: #161D33;
+    border-radius: 12px;
+}
+
+.grade-passos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.passo {
+  background-color: #161D33;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.numero-passo {
+  font-size: 48px;
+  font-weight: bold;
+  color: #6C63FF;
+}
+
+.secao-sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.sobre-info {
+    display: grid;
+    gap: 15px;
+}
