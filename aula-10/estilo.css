@@ -1,0 +1,131 @@
+/* estilo.css inicial — a cor #0570b5 aparece REPETIDA de propósito.
+   Passo 1 da atividade: criem o :root e troquem tudo por var(). */
+
+   /* === VARIÁVEIS === */
+
+:root {
+    /* Cores */
+    --cor-primaria: #0570b5;
+    --cor-secundaria: #e3f2fd;
+    --cor-texto: #333333;
+
+    /* Tipografia */
+    --fonte-principal: Arial, sans-serif;
+
+    /* Espaçamento */
+    --espacamento: 20px;
+
+    /* Borda */
+    --raio-borda: 8px;
+} 
+
+/* === RESET === */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === BASE === */
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: #f4f4f4;
+    color: var(--cor-texto);
+}
+
+/* === HEADER === */
+
+.header {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 15px;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* === BANNER === */
+
+.banner {
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    margin: 10px;
+    border-radius: var(--raio-borda);
+    text-align: center;
+    animation: fadein 2s ease-in;
+}
+
+/* === PRODUTOS === */
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 10px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: var(--raio-borda);
+  text-align: center;
+}
+
+/* === BOTÕES === */
+
+.btn-primary {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #045a91;
+    transform: scale(1.05);
+}
+
+/* === FOOTER === */
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* === RESPONSIVIDADE === */
+
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+    }
+}
+
+/* === ANIMAÇÕES === */
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
