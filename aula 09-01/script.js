@@ -29,3 +29,14 @@ btnSaibaMais.addEventListener("click", function() {
     btnSaibaMais.style.backgroundColor = "#10b981";
     btnSaibaMais.innerText = "Texto Atualizado!";
 })
+
+
+const tag = document.querySelector(" .card-tag");
+console.log("querySelector('.card-tag') encontrou:", tag.textContent);
+
+const cards = document.querySelectorAll(".card");
+console.log(`querySelectorAll('.card') encontrou ${cards.length} cards(s)`);
+
+cards.forEach(function (card, indice) {
+    const tituloDoCard = card.querySelector()
+})
